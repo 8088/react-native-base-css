@@ -36,6 +36,10 @@ const styles = StyleSheet.create({
     cl2:{width:equal2_w},
     cl3:{width:equal3_w},
 
+    p:{color:Colors.dark,lineHeight:20,fontSize:14,padding:10},//段落
+    img:{},
+    bg_white:{backgroundColor:Colors.white},
+
     //文字
     f10:{fontSize:10},
     f12:{fontSize:12},
@@ -52,8 +56,9 @@ const styles = StyleSheet.create({
     tl:{textAlign:'left'},
     tc:{textAlign:'center'},
     tr:{textAlign:'right'},
-    udl:{textDecorationLine: 'underline'},
-    no_udl:{textDecorationLine: 'none'},
+    udl:{textDecorationLine:'underline'},
+    no_udl:{textDecorationLine:'none'},
+    no_bg:{backgroundColor:'transparent'},
 
     white:{color:Colors.white},
     black:{color:Colors.black},
@@ -67,7 +72,10 @@ const styles = StyleSheet.create({
     purple:{color:Colors.purple},
     pink:{color:Colors.pink},
     gray:{color:Colors.gray},
+    grey:{color:Colors.grey},
     deep:{color:Colors.deep},
+    dark:{color:Colors.dark},
+
 
     //布局
     f_1:{flex:1},
