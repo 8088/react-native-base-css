@@ -30,18 +30,23 @@ const styles = StyleSheet.create({
     //>=rn0.43才支持
     //vr:{width:StyleSheet.hairlineWidth,height:'100%',backgroundColor:'#eee'},//竖线（早期版本不支持百分比）
     //none:{display:'none'},
+    b_l:{borderBottomWidth:StyleSheet.hairlineWidth,borderBottomColor:'#eee'},//底线
+    t_l:{borderTopWidth:StyleSheet.hairlineWidth,borderTopColor:'#eee'},//顶线
     s_w:{width:screen_w},
     s_h:{width:screen_h},
     cl1:{width:internal_w},
     cl2:{width:equal2_w},
     cl3:{width:equal3_w},
 
-    p:{color:Colors.dark,lineHeight:20,fontSize:14,padding:10},//段落
+    b:{fontWeight:'bold'},
+    p:{color:Colors.dark,lineHeight:20,fontSize:14,padding:10,paddingTop:4},//段落
     img:{},
     bg_white:{backgroundColor:Colors.white},
 
+
     //文字
     f10:{fontSize:10},
+    f11:{fontSize:11},
     f12:{fontSize:12},
     f13:{fontSize:13},
     f14:{fontSize:14},
@@ -51,13 +56,17 @@ const styles = StyleSheet.create({
     f22:{fontSize:22},
     f24:{fontSize:24},
     lh20:{lineHeight:20},
+    lh18:{lineHeight:18},
+    lh16:{lineHeight:16},
+    lh14:{lineHeight:14},
     fb:{fontWeight:'bold'},
     fn:{fontWeight:'normal'},
     tl:{textAlign:'left'},
     tc:{textAlign:'center'},
     tr:{textAlign:'right'},
-    udl:{textDecorationLine:'underline'},
-    no_udl:{textDecorationLine:'none'},
+    udl:{textDecorationLine:'underline'},//下划线
+    rml:{textDecorationLine:'line-through'},//删除线
+    no_l:{textDecorationLine:'none'},
     no_bg:{backgroundColor:'transparent'},
 
     white:{color:Colors.white},
@@ -94,6 +103,28 @@ const styles = StyleSheet.create({
     a_e:{alignItems:'flex-end'},
     a_c:{alignItems:'center'},
     m_c:{justifyContent:'center',alignItems:'center'},
+
+    z_0:{zIndex:0},
+    z_1:{zIndex:1},
+    z_2:{zIndex:2},
+    z_3:{zIndex:3},
+    z_4:{zIndex:4},
+    z_5:{zIndex:5},
+    z_6:{zIndex:6},
+    z_7:{zIndex:7},
+    z_8:{zIndex:8},
+    z_9:{zIndex:9},
+
+    w10:{width:10},
+    w20:{width:20},
+    w30:{width:30},
+    w40:{width:40},
+    w50:{width:50},
+    h10:{height:10},
+    h20:{height:20},
+    h30:{height:30},
+    h40:{height:40},
+    h50:{height:50},
 
     m5:{margin:5},
     m10:{margin:10},
