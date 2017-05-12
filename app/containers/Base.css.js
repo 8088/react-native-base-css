@@ -25,13 +25,15 @@ const styles = StyleSheet.create({
         flex:1,
         backgroundColor:'#f4f4f4'
     },
-    hr:{height:StyleSheet.hairlineWidth,backgroundColor:'#eee'},//横线
-    vr:{borderRightWidth:StyleSheet.hairlineWidth,borderRightColor:'#eee'},//竖线
+    hr:{height:StyleSheet.hairlineWidth,backgroundColor:Colors.light},//横线
+    vr:{borderRightWidth:StyleSheet.hairlineWidth,borderRightColor:Colors.light},//竖线
     //>=rn0.43才支持
-    //vr:{width:StyleSheet.hairlineWidth,height:'100%',backgroundColor:'#eee'},//竖线（早期版本不支持百分比）
+    //vr:{width:StyleSheet.hairlineWidth,height:'100%',backgroundColor:Colors.light},//竖线（早期版本不支持百分比）
     //none:{display:'none'},
-    b_l:{borderBottomWidth:StyleSheet.hairlineWidth,borderBottomColor:'#eee'},//底线
-    t_l:{borderTopWidth:StyleSheet.hairlineWidth,borderTopColor:'#eee'},//顶线
+    b_l:{borderBottomWidth:StyleSheet.hairlineWidth,borderBottomColor:Colors.light},//底线
+    t_l:{borderTopWidth:StyleSheet.hairlineWidth,borderTopColor:Colors.light},//顶线
+    b_b:{borderBottomWidth:StyleSheet.hairlineWidth,borderBottomColor:Colors.gray},//底边
+    b_t:{borderTopWidth:StyleSheet.hairlineWidth,borderTopColor:Colors.gray},//顶边
     s_w:{width:screen_w},
     s_h:{width:screen_h},
     cl1:{width:internal_w},
@@ -39,9 +41,10 @@ const styles = StyleSheet.create({
     cl3:{width:equal3_w},
 
     b:{fontWeight:'bold'},
-    p:{color:Colors.dark,lineHeight:20,fontSize:14,padding:10,paddingTop:4},//段落
+    p:{color:Colors.deep,lineHeight:27,textAlign:'justify',fontSize:17,paddingHorizontal:10,paddingTop:5,paddingBottom:30},//段落
     img:{},
     bg_white:{backgroundColor:Colors.white},
+    bg_red:{backgroundColor:Colors.red},
 
 
     //文字
@@ -50,7 +53,9 @@ const styles = StyleSheet.create({
     f12:{fontSize:12},
     f13:{fontSize:13},
     f14:{fontSize:14},
+    f15:{fontSize:15},
     f16:{fontSize:16},
+    f17:{fontSize:17},
     f18:{fontSize:18},
     f20:{fontSize:20},
     f22:{fontSize:22},
@@ -72,6 +77,7 @@ const styles = StyleSheet.create({
     white:{color:Colors.white},
     black:{color:Colors.black},
     red:{color:Colors.red},
+    yellow:{color:Colors.yellow},
     orange:{color:Colors.orange},
     gold:{color:Colors.gold},
     green:{color:Colors.green},
@@ -80,6 +86,7 @@ const styles = StyleSheet.create({
     rose:{color:Colors.rose},
     purple:{color:Colors.purple},
     pink:{color:Colors.pink},
+    light:{color:Colors.light},
     gray:{color:Colors.gray},
     grey:{color:Colors.grey},
     deep:{color:Colors.deep},
